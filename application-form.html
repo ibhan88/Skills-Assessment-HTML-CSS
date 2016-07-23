@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<head>
+    <title>Skills-HTML-CSS</title>
+
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+<!-- your html goes here -->
+    <h1>Application Form</h1>
+    <p class="outlined">Welcome to the Application Form page. Please fill out the information below, and we will get back to you after review.</p>
+    <form action="/application" method="POST">
+        <label for="first-name">First Name: </label><br>
+        <input type="text" name="firstname" id="first-name"><br><br>
+        <span><label for="last-name">Last Name: </label></span><br>
+        <input type="text" name="lastname" id="last-name"><br><br>
+        <label for="salary-requirement">Salary Requirement: </label><br>
+        <input type="number" name="salary" id="salary-requirement" min="1"><br><br>
+        <fieldset>
+            <legend>Applying For: </legend>
+            <input type="radio" name="job" id="software-engineer" value="software-engineer">
+            <label for="software-engineer"> Software Engineer</label>
+            <input type="radio" name="job" id="qa-engineer" value="qa-engineer">
+            <label for="qa-engineer"> QA Engineer</label>
+            <input type="radio" name="job" id="product-manager" value="product-manager">
+            <label for="product-manger"> Product Manger</label>
+        </fieldset><br><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
